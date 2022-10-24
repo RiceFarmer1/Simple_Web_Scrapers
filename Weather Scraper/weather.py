@@ -51,7 +51,7 @@ def get_weather_data(url):
 
 def get_result(search):
 
-    URL = f"https://www.google.com/search?lr=lang_en&ie=UTF-8&q=weather{search}"
+    URL = f"https://www.google.com/search?q={search}+weather"
 
     args = parser.parse_args()
     region = args.region
