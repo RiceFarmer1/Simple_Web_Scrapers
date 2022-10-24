@@ -10,6 +10,7 @@ parser.add_argument("region", nargs="?", help="""Region to get weather for, must
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36"
 LANGUAGE = "en-US, en; q=0.5"
 
+
 def get_weather_data(url):
 
     session = requests.Session()
