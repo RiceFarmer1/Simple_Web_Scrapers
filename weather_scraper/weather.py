@@ -61,8 +61,9 @@ def get_result(search):
     # print data
     print("\n")
     print("-"*40)
-    print("Weather for:", data["region"])
+    print("\n")
 
+    print("Weather for:", data["region"])
     print("\n")
     print("Time:", data["dayhour"])
     print(f"Temperature now: {data['temp_now']}°C")
