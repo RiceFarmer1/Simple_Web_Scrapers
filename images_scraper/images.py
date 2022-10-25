@@ -17,7 +17,7 @@ htmldata = urlopen(f'https://unsplash.com/s/photos/{query}')
 # Scrape html 
 
 soup = BeautifulSoup(htmldata, 'html.parser')
-images = soup.find_all('img')
+images = soup.findAll('img', {"src": True})
 
 # Get image data and decode
 
